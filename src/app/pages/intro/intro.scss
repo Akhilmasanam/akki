@@ -1,0 +1,41 @@
+/* Shared Proposal Button Style */
+.proposal-btn {
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  outline: none;
+
+  /* Floating animation to make them look "dreamy" */
+  animation: float 3s ease-in-out infinite;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(255, 117, 140, 0.6);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}

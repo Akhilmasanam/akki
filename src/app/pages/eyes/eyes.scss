@@ -1,0 +1,38 @@
+/* Add this to your existing app.scss */
+
+.proposal-btn {
+  /* ... (Keep all the styles from the Play Music button) ... */
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  margin-top: 20px;
+  text-decoration: none; // If it's an <a> tag
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Add a gentle floating animation so it grabs attention */
+  animation: float 3s ease-in-out infinite;
+}
+
+.sparkle-icon {
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+
+/* Floating animation for the "Continue" button */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Optional: Make the sparkle spin slowly */
+.sparkle-icon {
+  display: inline-block;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

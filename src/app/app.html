@@ -1,3 +1,8 @@
 <div class="section">
+<button class="proposal-btn toggle-music" (click)="togglePlay()" [class.beating]="play">
+  <span class="heart-icon">❤</span>
+  {{ play ? 'Pause Magic' : 'Play Magic' }}
+</button>
+
 <router-outlet></router-outlet>
 </div>
