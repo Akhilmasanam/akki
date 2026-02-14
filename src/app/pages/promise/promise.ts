@@ -14,7 +14,7 @@ export class Promise {
  route=inject(Router)
 
   showLove() {
-  alert("You just made me the happiest person alive ❤️");
+  alert("You just made me the happiest person alive, love you bangaram 🤗😘✨💫❤️");
 }
 
 navigate(){
