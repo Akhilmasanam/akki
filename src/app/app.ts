@@ -13,7 +13,7 @@ export class AppComponent {
 
   play: boolean = true;
   isvisble: boolean = true;
-audio: HTMLAudioElement = new Audio('../assets/3-moonu-bgm-hq-background-music-appus-1_Wvl3DWx9.mp3');
+audio: HTMLAudioElement = new Audio('3-moonu-bgm-hq-background-music-appus-1_Wvl3DWx9.mp3');
 
 
 
